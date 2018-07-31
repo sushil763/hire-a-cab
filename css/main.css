@@ -1,1 +1,374 @@
+body {
+	background-color: #E5E5E4;
+	font-size: 10px;
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+}
 
+.document {
+	width: 100%;
+	max-width: 1800px;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+/*****************
+NAVBAR STARTS HERE
+*****************/
+
+#navbar {
+	background-color: white;
+	width: 100%;
+	padding: 10px 0 10px;
+	position: fixed;
+	z-index: 3;
+	overflow: auto;
+	max-width: 1800px;
+}
+
+#navbar .container-fluid {
+	padding: 0;
+	width: 100%;
+}
+
+#navbar a {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+}
+
+#navbar a.title {
+	padding-left: 20px;
+}
+
+#navbar a.login-button{
+	font-size: 1em;
+	float: right;
+	background-color: #216C55;
+	color: white;
+	margin-right: 20px;
+}
+
+#navbar ul.navlist {
+	position: absolute;
+	z-index: 2;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0;
+	background-color: black;
+	display: none;
+}
+
+#navbar ul.navlist li {
+	width: 100%;
+}
+
+#navbar ul.navlist li a{
+	color: white;
+	display: block;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+/*************************
+MAIN-CONTAINER STARTS HERE
+*************************/
+
+#main-container {
+	padding-top: 55px;
+	width: 100%;
+	background-color: white;
+}
+
+#main-container .container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+#main-container .container-fluid h1 {
+	margin: 0;
+	padding: 20px 0 20px 30px; 
+	font-size: 3em;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#main-container .container-fluid .main-img {
+	width: 100%;
+	background: url("../images/desk.jpg");
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+#main-container .main-img .login-link {
+	position: absolute;
+	z-index: 1;
+	bottom: -30px;
+	right: 30px;
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: #216C55;
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+}
+
+#main-container .main-img .login-link:hover {
+	background-color: #0b470e;
+}
+
+#main-container .reasons-to-ride {
+	padding: 30px 10px 10px;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: auto;
+}
+
+#main-container .reasons-to-ride .reason {
+	width: 100%;
+	padding: 10px;
+	overflow: auto;
+}
+
+#main-container .reasons-to-ride .reason img {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+
+#main-container .reasons-to-ride .reason h3 {
+	font-size: 2.5em;
+	padding: 0 10px;
+}
+
+#main-container .reasons-to-ride .reason p{
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+/************************
+APP CONTAINER STARTS HERE
+************************/
+
+#app-data {
+	background-color: #F1F1F1;
+	padding: 20px;
+}
+
+#app-data .container-fluid{
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+#app-data img {
+	display: block;
+	width: 100%;
+	min-height: 220px;
+	max-height: 350px;
+}
+
+#app-data .data h4 {
+	margin: 0;
+	padding: 20px 10px 5px;
+	font-size: 2em;
+}
+
+#app-data .data h3 {
+	margin: 0;
+	padding: 0 10px 0;
+	font-size: 2.5em;
+}
+
+#app-data .data p {
+	margin: 0;
+	padding: 10px 10px 20px;
+	font-size: 1.5em; 
+}
+
+
+
+/***********************
+NOW-ARRIVING STARTS HERE
+***********************/
+
+#now-arriving {
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	background-color: white;
+}
+
+#now-arriving .container-fluid {
+	margin: auto;
+	padding: 0;
+	max-width: 1000px;
+}
+
+#now-arriving h4 {
+	padding: 10px;
+	margin: 0;
+	font-size: 2.2em;
+	padding-bottom: 0;
+}
+
+#now-arriving h3 {
+	padding: 10px;
+	margin: 0;
+	font-size: 2.7em;
+}
+
+
+#now-arriving .sub-container {
+	width: 100%;
+	padding: 10px;
+}
+
+#now-arriving .sub-container img {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+}
+
+#now-arriving .sub-container h3 {
+	font-size: 2.5em;
+	padding: 0 10px;
+}
+
+#now-arriving .sub-container h4 {
+	font-size: 2em;
+	padding: 10px 10px 0;
+}
+
+#now-arriving .sub-container p{
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+
+/****************
+MAP
+*****************/
+
+
+#map {
+	width: 100%;
+	height: 250px
+}
+
+
+
+/*********************
+FOOTER
+*********************/
+
+.footer {
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+	color: white;
+}
+
+.footer p {
+	padding: 0 10px;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+.footer p a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 550px ){
+	/********* MAIN-CONTAINER *******/
+	#main-container .container-fluid .main-img {height: 380px;}
+
+	/**********MAP*************/
+	#map {height: 300px;}
+}
+
+@media only screen and (min-width: 600px){
+	/********* MAIN-CONTAINER *******/
+	#main-container .reasons-to-ride {padding: 40px 25px 20px;}
+	#main-container .reasons-to-ride .reason {padding: 15px;}
+	#main-container .reasons-to-ride .reason img, #main-container .reasons-to-ride .reason .reason-data{float: left;}
+	#main-container .reasons-to-ride .reason .reason-data{width: 70%;}
+
+
+}
+
+@media only screen and (min-width: 768px ){
+	body {font-size: 12px;}
+	/****** NAVBAR ***********/
+	#navbar {padding: 13px 0 10px;}
+	#navbar .container-fluid {padding: 0 15px;}
+	#navbar a.title {padding-left: 30px;}
+	#navbar a.login-button{display: none;}
+	#navbar ul.navlist {float: right; background-color: white; padding: 0; display: block; position: static;}
+	#navbar ul.navlist li{float: left; width: auto; padding: 5px 10px;}
+	#navbar ul.navlist li a{color: black;padding: 5px; border-bottom: 2px solid white;}
+	#navbar ul.navlist li a.driver{color:white;background-color: #216C55; padding: 5px 15px;} 
+	#navbar ul.navlist li a:hover {border-bottom: 2px solid #216C55;}
+
+	/********* MAIN-CONTAINER *******/
+	#main-container {padding-top: 100px;}
+	#main-container .container-fluid h1 {padding: 30px 0 30px 100px; font-size: 4em;}
+	#main-container .main-img .login-link {bottom: -60px; right: 100px;}
+	#main-container .reasons-to-ride {padding: 60px 20px 40px;}
+	#main-container .reasons-to-ride .reason {width: 33%; float: left;}
+	#main-container .reasons-to-ride .reason img{margin: auto;}
+	#main-container .reasons-to-ride .reason .reason-data{width: 100%;}
+	#main-container .reasons-to-ride .reason h3 {font-size: 2em;}
+	#main-container .reasons-to-ride .reason p {font-size:  1.2em;}
+
+	/**********APP-DATA***************/
+	#app-data {padding: 70px 100px;}
+	#app-data img {float: left; width: 55%; max-height: 500px; min-height: 350px;}
+	#app-data .data {float: left; width: 45%; padding: 50px 10px 0 25px; font-size: 10px;}
+
+	/**********NOW ARRIVING**********/
+	#now-arriving .sub-container {width: 50%; float: left;}
+	#now-arriving .sub-container {padding: 30px;}
+
+	/**********MAP*************/
+	#map {height: 360px;}
+}
+
+@media only screen and (min-width: 1000px){
+	/********MAIN CONTAINER********/
+	#main-container .container-fluid .main-img {height: 500px;}
+	#main-container .main-img .login-link {bottom: -60px; right: 200px;}
+
+	/**********APP-DATA***************/
+	#app-data img {float: left; width: 70%; max-height: 500px;}
+	#app-data .data {width: 30%;}
+
+	/**********MAP*************/
+	#map {height: 400px;}
+}
+
+@media only screen and (min-width: 1200px){
+	/**********APP-DATA***************/
+	#app-data .data {width: 30%; font-size: 13px;}
+
+	/**********MAP*************/
+	#map {height: 450px;}
+}
