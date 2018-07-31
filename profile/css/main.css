@@ -1,0 +1,121 @@
+body {
+	font-size: 10px;
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+}
+
+.document {
+	width: 100%;
+	max-width: 1800px;
+	margin: auto;
+	overflow: hidden;
+	background: url('../background-img.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+
+/*****************
+NAVBAR STARTS HERE
+*****************/
+
+#navbar {
+	background-color: white;
+	width: 100%;
+	padding: 10px 0 10px;
+	position: fixed;
+	z-index: 3;
+	overflow: auto;
+	max-width: 1800px;
+}
+
+#navbar .container-fluid {
+	padding: 0;
+	width: 100%;
+}
+
+#navbar a {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+}
+
+#navbar a.title {
+	padding-left: 20px;
+}
+
+#navbar form {
+	display: inline-block;
+	float: right;
+}
+
+#navbar .logout-button{
+	font-size: 2em;
+	float: right;
+	background-color: #216C55;
+	color: white;
+	margin-right: 20px;
+}
+
+
+
+/*********************
+USER DATA
+*********************/
+
+#user-data {
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+	color: white;
+	margin-bottom: 60px;
+
+}
+
+
+/*********************
+FOOTER
+*********************/
+
+.footer {
+	width: 100%;
+	max-width: 1800px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	display: block;
+}
+
+.footer p {
+	padding: 0 10px;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+.footer p a{
+	text-decoration: none;
+}
+
+
+@media only screen and (min-height: 560px) and (min-width: 768px){
+	.footer {position: absolute; bottom: 0; left: 0;}
+	.document {height: 100vh;}
+}
+
+
+@media only screen and (min-width: 768px ){
+	body {font-size: 12px;}
+	/****** NAVBAR ***********/
+	#navbar {padding: 13px 0 10px;}
+	#navbar .container-fluid {padding: 0 15px;}
+	#navbar a.title {padding-left: 30px;}
+	#navbar .logout-button {margin-right: 30px;}
+	
+
+
+}
+
