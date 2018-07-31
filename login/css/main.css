@@ -1,0 +1,196 @@
+body {
+	font-size: 10px;
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+}
+
+.document {
+	width: 100%;
+	max-width: 1800px;
+	margin: auto;
+	overflow: hidden;
+	background: url('../background-img.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+
+/*****************
+NAVBAR STARTS HERE
+*****************/
+
+#navbar {
+	background-color: white;
+	width: 100%;
+	padding: 10px 0 10px;
+	position: fixed;
+	z-index: 3;
+	overflow: auto;
+	max-width: 1800px;
+}
+
+#navbar .container-fluid {
+	padding: 0;
+	width: 100%;
+}
+
+#navbar a {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+}
+
+#navbar a.title {
+	padding-left: 20px;
+}
+
+#navbar a.login-button{
+	font-size: 1em;
+	float: right;
+	background-color: #216C55;
+	color: white;
+	margin-right: 20px;
+}
+
+#navbar ul.navlist {
+	position: absolute;
+	z-index: 2;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0;
+	background-color: black;
+	display: none;
+}
+
+#navbar ul.navlist li {
+	width: 100%;
+}
+
+#navbar ul.navlist li a{
+	color: white;
+	display: block;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+/*********************
+FORM-DATA
+*********************/
+
+#form-data {
+	width: 100%;
+	padding-top: 100px;
+	height: 100%;
+	overflow: auto;
+}
+
+#form-data .container-fluid {
+	width: 100%;
+	padding: 20px;
+	max-width: 1000px;
+	margin: auto;
+	overflow: auto;
+}
+
+#form-data .login-section {
+	width: 100%;
+	background-color: #F8F8F9;
+	padding: 20px;
+	max-width: 350px;
+	border: 5px solid lightgrey;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+#form-data .login-section h2 {
+	margin: 0;
+	font-weight: bold;
+}
+
+.login-form input {
+	line-height: 25px;
+	width: 90%;
+	padding: 5px 10px;
+}
+
+#form-data .register-section{
+	width: 100%;
+	background-color: #F8F8F9;
+	max-width: 450px;
+	padding: 20px;
+	border: 5px solid lightgrey;
+	margin: auto;
+}
+
+#form-data .register-section h2 {
+	margin: 0;
+	font-weight: bold;
+}
+
+.register-form input {
+	line-height: 25px;
+	padding: 5px 10px;
+	width: 90%;
+}
+
+#form-data .register-button, #form-data .login-button, #form-data #otp-button {
+	max-width: 170px;
+	background-color: #216C55;
+	color: white;
+}
+
+/*********************
+FOOTER
+*********************/
+
+.footer {
+	width: 100%;
+	max-width: 1800px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	display: block;
+}
+
+.footer p {
+	padding: 0 10px;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+.footer p a{
+	text-decoration: none;
+}
+
+
+@media only screen and (min-height: 750px) and (min-width: 768px){
+	.footer {position: absolute; bottom: 0; left: 0;}
+	.document {height: 100vh;}
+}
+
+
+@media only screen and (min-width: 768px ){
+	body {font-size: 12px;}
+	/****** NAVBAR ***********/
+	#navbar {padding: 13px 0 10px;}
+	#navbar .container-fluid {padding: 0 15px;}
+	#navbar a.title {padding-left: 30px;}
+	#navbar a.login-button{display: none;}
+	#navbar ul.navlist {float: right; background-color: white; padding: 0; display: block; position: static;}
+	#navbar ul.navlist li{float: left; width: auto; padding: 5px 10px;}
+	#navbar ul.navlist li a{color: black;padding: 5px; border-bottom: 2px solid white;}
+	#navbar ul.navlist li a.driver{color:white;background-color: #216C55; padding: 5px 15px;} 
+	#navbar ul.navlist li a:hover {border-bottom: 2px solid #216C55;}
+
+	/****** FORM-DATA ********/
+	#form-data .login-section { width: 33%; float: left; border: 5px solid lightgrey; margin: 30px; padding: 30px;}
+	#form-data .register-section {width: 50%; float: right; border: 5px solid lightgrey; margin: 30px; padding: 30px;}
+
+}
+
